@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do App</title>
+    <link rel="stylesheet" href="list_view.css">
+    <link rel="icon" href="add-list-icon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="outer-div">
+        <div class="center blur-background">
+            <div class="center-header">
+                <h2 class="paris-header"><span>Trip To Paris</span></h2>
+                <div class="back-button ">
+                    <i class="fa fa-arrow-left fa-back-icon" aria-hidden="true"></i> <span>Back</span>
+                </div>       
+            </div> 
+            <div class="">
+                
+                <div class="chosen-task">
+                    <div class="task-header"> Trip to Paris</div>
+                    <div class="text-center">
+                        <div class="completed-task">  &nbsp;&nbsp;Completed Task </div>
+                        <span>
+                            <input type="checkbox" id="pending-task1">
+                            <label for="pending-task1" class="pending-task1">Pending Task</label>
+                        </span>
+                    </div>
+                    <span class="plus-circle"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i></span>
+                </div>           
+            </div>
+        </div>
+        <div class="pop-up">
+            <span>Add New Item</span>
+            <div>
+                <input type="text" class="input-field" name="add-new-list" id="add-new-list"><br>
+                <input type="submit" value="ADD" class="add-button">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

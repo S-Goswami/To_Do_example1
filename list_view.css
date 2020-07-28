@@ -1,0 +1,223 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.outer-div{
+    position: relative;
+    height: 500px;
+}
+
+@media (min-width: 480px)  {
+    .center{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 50%;
+        height: 300px;
+    }
+}
+
+.right-add-button{
+    float: right;
+    display: flex;
+}
+.center-header{
+    font-size: 30px;
+    text-align: center;
+}
+
+h2.paris-header { 
+    text-align:center; 
+    border-bottom: 2px solid lightgray; 
+    line-height:0.1em;
+    width: 70%;
+    display: inline-block;
+} 
+h2.paris-header span { background:#fff; padding:0 10px; }
+
+/* h2::before,
+h2::after {
+    display: inline-block;
+    content: "";
+    border-top: 0.1rem solid lightgray;
+    height: 6rem;
+    width: 7rem;
+    transform: translateY(90%);
+    margin-left: .9rem;
+    margin-right: .9rem;
+} */
+.font-bold{
+    font-weight: bold;
+}
+.font-light{
+    font-weight: 100;
+    color: gray;
+}
+.add-list-icon{
+    width: 25px;
+}
+.add-list-padding{
+    padding-top: 2px;
+    padding-right: 5px;
+}
+.add-list-icon-text{
+    color: gray;
+    font-size: 20px;
+    font-weight: 100;
+}
+.text-status{
+    text-align: center;
+}
+.margin-top{
+    margin-top: 25px;
+}
+.task{
+    width: 26%;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    height: 250px;
+    box-shadow: 3px 3px 5px #ded3d3;
+}
+.task-header{
+    margin-left: 30%;
+    padding: 15px 15px 15px 0px;
+    border-bottom: 1px solid #ccc6c6;
+    color: #e74c3c;
+    padding-bottom: 8px;
+        margin-top: 1rem;
+        font-size: 20px;
+}
+.completed-task{
+    color: #e74c3c;
+    font-weight: bold;
+    margin: 15px 0px 15px 15px;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+.pending-task1{
+    font-size: 12px;
+}
+.task span{
+    margin-left: 5px;
+}
+
+
+.chosen-task{
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+    height: 250px;
+    box-shadow: 3px 3px 5px #ded3d3;
+    margin: 0 auto;
+    width: 40%;
+    position: relative;
+}
+/* .back-button span{
+    background: #f37a21;
+    display: inline-block;
+    width: 46px;
+    color: white;
+    border-radius: 50%;
+    padding-bottom: 4px;
+} */
+.back-button {
+    margin: 40px auto;
+    font-size: 1.5rem;
+    color: gray;
+}
+.back-button .fa-back-icon{
+    background: #e74c3c;
+    width: 28px;
+    height: 22px;
+    border-radius: 50%;
+    padding-top: 7px;
+    font-size: 14px;
+    color: white;
+}
+.fa-plus-circle{
+    font-size: 1rem;
+    color: #e74c3c;
+}
+.plus-circle{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 5px;
+}
+.pending-task{
+    padding-right: 2rem;
+}
+
+
+
+/* add_todo_item_page css */
+.blur-background{
+    filter: blur(4px);
+}
+.pop-up{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid #e74c3c;
+    width: 20rem;
+    height: 10rem;
+    border-radius: 10px;
+    text-align: center;
+    background: white;
+}
+.pop-up span{
+    color: #e74c3c;
+    padding-top: 10px;
+}
+.pop-up > *{
+    display: block;
+    line-height: 2.7;
+}
+.pop-up .input-field {
+    width: 14rem;
+    line-height: 1.5rem;
+    border: 1px solid #e74c3c;
+    border-radius: 5px;
+}
+.pop-up .add-button{
+    width: 5rem;
+    height: 2rem;
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+    border-radius: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px)  {
+    h2.paris-header{
+    border-bottom: none;
+    line-height: unset;
+    width: unset;
+    display: block;
+    font-size: 2.5rem;
+    }
+    .center-header{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    }
+    .back-button {
+        margin: 40px 0;
+    }
+    .back-button span{
+        display: none;
+    }
+    .chosen-task{
+        height: 300px;
+        width: 60%;
+        margin: 20px auto;
+    }
+    .task-header{
+        padding-bottom: 8px;
+        margin-top: 1rem;
+        font-size: 20px;
+    }
+    .pop-up{
+        width: 85%;
+    }
+}
