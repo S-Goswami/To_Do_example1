@@ -11,7 +11,7 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        width: 50%;
+        width: 70%;
         height: 300px;
     }
 }
@@ -20,6 +20,8 @@ body {
     float: right;
     display: flex;
     margin-top: 1rem;
+    background: white;
+    border: 0;
 }
 .left-header{
     display: inline;
@@ -36,7 +38,7 @@ body {
     width: 25px;
 }
 .add-list-padding{
-    padding-top: 2px;
+    /* padding-top: 2px; */
     padding-right: 5px;
 }
 .add-list-icon-text{
@@ -47,6 +49,7 @@ body {
 .display-flex{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .margin-top{
     margin-top: 25px;
@@ -55,8 +58,10 @@ body {
     width: 26%;
     border: 1px solid #e74c3c;
     border-radius: 5px;
-    height: 250px;
+    min-height: 250px;
     box-shadow: 3px 3px 10px #ded3d3;
+    position: relative;
+    margin-bottom: 2rem;
 }
 .task-header{
     margin-left: 25px;
@@ -94,6 +99,8 @@ body {
     border-radius: 10px;
     text-align: center;
     background: white;
+    z-index: 1;
+    transition: 0.5s;
 }
 .pop-up span{
     color: #e74c3c;
@@ -116,6 +123,8 @@ body {
     border: none;
     color: white;
     border-radius: 20px;
+    line-height: 20px;
+
 }
 
 
@@ -172,7 +181,7 @@ body {
         color: initial;
         border: none;
     }
-    .task-status{
+    .task-section{
         display: none;
     }    
     .task{
@@ -181,4 +190,58 @@ body {
     .pop-up{
         width: 85%;
     }
+}
+
+
+
+/* new css */
+.display-none{
+    display: none;
+}
+#noToDo {
+    font-size: 32px;
+    padding: 20px 0;
+    font-weight: 100;
+}
+.list-buttons {
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    margin: 7px;
+}
+
+.list-buttons button {
+    outline: none;
+    border: 0;
+}
+.plus-icon{
+    background: white;
+    font-size: 20px;
+    color: #4b8ce8;
+}
+.delete-icon{
+    background-color: #e74c3c;
+    color: white;
+    font-size: 15px;
+    width: 28px;
+    height: 26px;
+
+}
+.list-type-none {
+    list-style-type: none;
+    padding-left: 5px;
+}
+
+.mark-done{
+    background: #4b8ce8;
+    border: 1px solid #4b8ce8;
+    border-radius: 15px;
+    line-height: 13px;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 5px;
+    color: white;
+}
+.task-section{
+    margin-bottom: 3rem;
 }
